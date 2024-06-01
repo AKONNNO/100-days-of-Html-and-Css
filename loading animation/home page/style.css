@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+
+}
+a{
+    text-decoration: none;
+}
+img{
+    object-fit: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #000;
+    width: 50%;
+    height: 50px;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 16px;
+    border-radius: 30px;
+    right: 50px;
+}
+nav .logo{
+    display: flex;
+    position: relative;
+    right: -10px;
+    align-items: center;
+}
+ .logo img{
+    width: 25px;
+    height: 30px;
+    border-radius: 50%;
+}
+nav .nav-links{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 32px;
+}
+nav .nav-links a{
+    color: #000;
+    font-size: 1.13em;
+    position: relative;
+
+}
+nav .nav-links a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    width: 0;
+    left: 0;
+    transition: all ease 0.3s;
+    background-color: blue;
+}
+nav .nav-links a:hover::after{
+    width: 70%;
+    border-radius: 30px;
+}
+nav .logo a{
+    color: #000;
+    font-size: 1.13em;
+}
+nav button{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    right: 30px;
+    transition: all ease 0.3s;
+}
+nav button:hover{
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 140px;
+    right: 450px;
+}
+.hero .left-section img{
+    display: flex;
+    position: absolute;
+    top: -20px;
+    right: -400px;
+    border-radius: 30px;
+    width: 400px;
+
+}
+.hero .left-section .top p{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    left: 240px;
+    font-size: 1.29em;
+    top: 40px;
+
+
+}
+.hero .left-section .top h2{
+    position: relative;
+    left: 240px;
+    top: 24px;
+    font-size: 3em;
+    transition: all ease 0.3s;
+}
+.hero .left-section .top h2 span{
+    -webkit-text-fill-color: 2px transparent #fff;
+    -webkit-text-stroke-color: transparent  #000;
+}
+.hero .left-section .top button{
+    position: relative;
+    top: 70px;
+    left: 240px;
+    width: 140px;
+    height: 50px;
+    color: #fff;
+    background-color: #000;
+    transition: all ease 0.3s;
+}
+.hero .left-section .top button:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.blur{
+    box-shadow: 0 0  1000px 50px #000;
+}
